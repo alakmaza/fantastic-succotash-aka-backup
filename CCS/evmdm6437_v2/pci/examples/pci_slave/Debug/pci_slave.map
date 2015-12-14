@@ -1,0 +1,145 @@
+******************************************************************************
+          TMS320C6x COFF Linker PC v6.0.1                      
+******************************************************************************
+>> Linked Thu Mar 22 18:23:45 2007
+
+OUTPUT FILE NAME:   <../test/pci_slave.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 10806680
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  MEMTEST               10800000   00000200  00000000  00000200  RWIX
+  VECS                  10804000   00000200  00000000  00000200  RWIX
+  BOOT                  10804200   00000200  00000000  00000200  RWIX
+  IRAM                  10804400   0001bc00  0000246c  00019794  RWIX
+  DDR2                  80000000   10000000  00000000  10000000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.ddr2      0    80000000    00000000     UNINITIALIZED
+
+.bss       0    10804400    00000000     UNINITIALIZED
+
+.cio       0    10804400    00000000     UNINITIALIZED
+
+.const     0    10804400    00000000     UNINITIALIZED
+
+.data      0    10804400    00000000     UNINITIALIZED
+
+.switch    0    10804400    00000000     UNINITIALIZED
+
+.sysmem    0    10804400    00000000     UNINITIALIZED
+
+.stack     0    10804400    00002000     UNINITIALIZED
+                  10804400    00000008     rts64plus.lib : boot.obj (.stack)
+
+.text      0    10806400    00000380     
+                  10806400    00000100     rts64plus.lib : exit.obj (.text:_exit)
+                  10806500    000000e0                   : autoinit.obj (.text:__auto_init)
+                  108065e0    000000a0                   : memcpy64.obj (.text:_memcpy)
+                  10806680    00000060                   : boot.obj (.text:_c_int00)
+                  108066e0    00000040                   : args_main.obj (.text:__args_main)
+                  10806720    00000020                   : exit.obj (.text:_abort)
+                  10806740    00000020                   : _lock.obj (.text:__nop)
+                  10806760    00000020     main.obj (.text)
+
+.far       0    10806780    00000098     UNINITIALIZED
+                  10806780    00000090     rts64plus.lib : exit.obj (.far)
+                  10806810    00000008                   : _lock.obj (.far)
+
+.cinit     0    10806818    00000054     
+                  10806818    0000002c     rts64plus.lib : exit.obj (.cinit)
+                  10806844    00000004     --HOLE-- [fill = 0]
+                  10806848    0000001c                   : _lock.obj (.cinit)
+                  10806864    00000008     --HOLE-- [fill = 0]
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+10804400   $bss
+10804400   .bss
+10804400   .data
+10806400   .text
+10806720   C$$EXIT
+00002000   __STACK_SIZE
+ffffffff   ___binit__
+10804400   ___bss__
+ffffffff   ___c_args__
+10806818   ___cinit__
+10804400   ___data__
+10804400   ___edata__
+10804400   ___end__
+10806780   ___etext__
+ffffffff   ___pinit__
+10806400   ___text__
+108066e0   __args_main
+10806500   __auto_init
+10806808   __cleanup_ptr
+1080680c   __dtors_ptr
+10806810   __lock
+10806740   __nop
+10804400   __stack
+10806814   __unlock
+10806720   _abort
+10806680   _c_int00
+10806400   _exit
+10806760   _main
+108065e0   _memcpy
+ffffffff   binit
+10806818   cinit
+10804400   edata
+10804400   end
+10806780   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00002000   __STACK_SIZE
+10804400   __stack
+10804400   ___bss__
+10804400   ___end__
+10804400   ___edata__
+10804400   ___data__
+10804400   edata
+10804400   .data
+10804400   .bss
+10804400   $bss
+10804400   end
+10806400   ___text__
+10806400   .text
+10806400   _exit
+10806500   __auto_init
+108065e0   _memcpy
+10806680   _c_int00
+108066e0   __args_main
+10806720   _abort
+10806720   C$$EXIT
+10806740   __nop
+10806760   _main
+10806780   ___etext__
+10806780   etext
+10806808   __cleanup_ptr
+1080680c   __dtors_ptr
+10806810   __lock
+10806814   __unlock
+10806818   cinit
+10806818   ___cinit__
+ffffffff   ___pinit__
+ffffffff   pinit
+ffffffff   ___c_args__
+ffffffff   binit
+ffffffff   ___binit__
+
+[35 symbols]

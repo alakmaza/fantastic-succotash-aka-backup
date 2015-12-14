@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: pci_host - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\Temp\Temp\RSP14.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "..\include" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/pci_host.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\CCStudio_v3.2\boards\evmdm6437\pci\examples\pci_host\pci_host.c"
+]
+Creating command line "cl.exe @c:\Temp\Temp\RSP14.tmp" 
+Creating command line "link.exe kernel32.lib user32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/pci_host.pdb" /machine:I386 /out:"..\test\pci_host.exe"  .\Release\pci_host.obj ..\lib\sd_pci64.lib "
+<h3>Output Window</h3>
+Compiling...
+pci_host.c
+Linking...
+
+
+
+<h3>Results</h3>
+pci_host.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

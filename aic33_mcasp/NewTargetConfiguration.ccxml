@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configurations XML_version="1.2" id="configurations_0">
+<configuration XML_version="1.2" id="Texas Instruments XDS100v3 USB Emulator_0">
+        <instance XML_version="1.2" desc="Texas Instruments XDS100v3 USB Emulator_0" href="connections/TIXDS100v3_Dot7_Connection.xml" id="Texas Instruments XDS100v3 USB Emulator_0" xml="TIXDS100v3_Dot7_Connection.xml" xmlpath="connections"/>
+        <connection XML_version="1.2" id="Texas Instruments XDS100v3 USB Emulator_0">
+            <instance XML_version="1.2" href="drivers/tixds100v2icepick_c.xml" id="drivers" xml="tixds100v2icepick_c.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds100v2c64xp.xml" id="drivers" xml="tixds100v2c64xp.xml" xmlpath="drivers"/>
+            <platform XML_version="1.2" id="platform_0">
+                <instance XML_version="1.2" desc="TMS320DM6437_0" href="devices/dm6437.xml" id="TMS320DM6437_0" xml="dm6437.xml" xmlpath="devices"/>
+            <device HW_revision="1" XML_version="1.2" description="DaVinci DM643x - C64x+ Fixed-point DSP" id="TMS320DM6437_0" partnum="TMS320DM6437">
+                    <router HW_revision="1.0" XML_version="1.2" description="ICEPick_C Router" id="IcePick_C_0" isa="ICEPICK_C">
+                        <subpath id="Subpath_0">
+                            <cpu HW_revision="1.0" XML_version="1.2" description="C64X+ CPU" id="C64XP_0" isa="TMS320C64XP">
+                                <property Type="filepathfield" Value="..\CCS\evmdm6437_v2\gel\evmdm6437.gel" id="GEL File"/>
+                            </cpu>
+                        </subpath>
+                    </router>
+                </device>
+            </platform>
+        </connection>
+    </configuration>
+</configurations>

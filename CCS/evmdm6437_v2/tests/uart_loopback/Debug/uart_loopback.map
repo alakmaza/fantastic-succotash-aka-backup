@@ -1,0 +1,484 @@
+******************************************************************************
+          TMS320C6x COFF Linker PC v6.0.1                      
+******************************************************************************
+>> Linked Mon Sep 17 13:32:16 2007
+
+OUTPUT FILE NAME:   <./Debug/uart.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 10807680
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  L2RAM                 10800000   00020000  0000a46c  00015b94  RWIX
+  DDR2                  80000000   10000000  00000000  10000000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.ddr2      0    80000000    00000000     UNINITIALIZED
+
+.data      0    10800000    00000000     UNINITIALIZED
+
+.text      0    10800000    00007940     
+                  10800000    00000480     evmdm6437bsl.lib : evmdm6437_pll.obj (.text)
+                  10800480    00000420     rts64plus.lib : _printfi.obj (.text:__setfield)
+                  108008a0    00000380                   : _printfi.obj (.text:__getarg_diouxp)
+                  10800c20    00000380     evmdm6437bsl.lib : evmdm6437.obj (.text)
+                  10800fa0    00000360     rts64plus.lib : _printfi.obj (.text:__printfi)
+                  10801300    00000300                   : fputs.obj (.text:_fputs)
+                  10801600    00000300                   : _printfi.obj (.text:_ecvt)
+                  10801900    00000300     evmdm6437bsl.lib : evmdm6437_flash_id.obj (.text)
+                  10801c00    000002e0     rts64plus.lib : _printfi.obj (.text:__pproc_fwp)
+                  10801ee0    000002e0                   : _printfi.obj (.text:_fcvt)
+                  108021c0    000002e0                   : _printfi.obj (.text:__fcpy)
+                  108024a0    000002a0                   : _printfi.obj (.text:__pconv_e)
+                  10802740    00000280                   : memory.obj (.text:_free)
+                  108029c0    00000280     evmdm6437bsl.lib : evmdm6437_uart.obj (.text)
+                  10802c40    00000260     rts64plus.lib : frcdivd.obj (.text:__frcdivd)
+                  10802ea0    00000260     evmdm6437bsl.lib : evmdm6437_i2c.obj (.text)
+                  10803100    00000240     rts64plus.lib : imath64.obj (.text:__divull)
+                  10803340    00000240     evmdm6437bsl.lib : evmdm6437_psc.obj (.text)
+                  10803580    00000220     uart_test.obj (.text)
+                  108037a0    00000220     rts64plus.lib : _printfi.obj (.text:__pproc_str)
+                  108039c0    00000200                   : frcaddd.obj (.text:__frcaddd)
+                  10803bc0    00000200                   : _printfi.obj (.text:__pproc_diouxp)
+                  10803dc0    000001e0                   : _printfi.obj (.text:__mcpy)
+                  10803fa0    000001e0     evmdm6437bsl.lib : evmdm6437_i2c_gpio.obj (.text)
+                  10804180    000001c0                      : evmdm6437_gpio.obj (.text)
+                  10804340    000001c0     rts64plus.lib : divd.obj (.text:__divd)
+                  10804500    000001a0                   : mpyd.obj (.text:__mpyd)
+                  108046a0    000001a0                   : imath40.obj (.text:__divul)
+                  10804840    000001a0                   : setvbuf.obj (.text:_setvbuf)
+                  108049e0    000001a0     evmdm6437bsl.lib : evmdm6437_ddr.obj (.text)
+                  10804b80    000001a0     rts64plus.lib : trgdrv.obj (.text:_HOSTrename)
+                  10804d20    00000180                   : memory.obj (.text:_malloc)
+                  10804ea0    00000160                   : _printfi.obj (.text:__pconv_g)
+                  10805000    00000160                   : _printfi.obj (.text:__pproc_fge)
+                  10805160    00000160                   : addd.obj (.text:__addd)
+                  108052c0    00000140     evmdm6437bsl.lib : evmdm6437_flash.obj (.text)
+                  10805400    00000140     rts64plus.lib : fputc.obj (.text:_fputc)
+                  10805540    00000120                   : _printfi.obj (.text:__pproc_fflags)
+                  10805660    00000120                   : fclose.obj (.text:_fclose)
+                  10805780    00000100                   : exit.obj (.text:_exit)
+                  10805880    00000100                   : trgdrv.obj (.text:_HOSTopen)
+                  10805980    00000100                   : _printfi.obj (.text:__ltostr)
+                  10805a80    00000100                   : _io_perm.obj (.text:__wrt_ok)
+                  10805b80    00000100                   : lowlev.obj (.text:_getdevice)
+                  10805c80    00000100                   : frcmpyd.obj (.text:__frcmpyd)
+                  10805d80    00000100                   : atoi.obj (.text:_atoi)
+                  10805e80    000000e0                   : trgdrv.obj (.text:_HOSTlseek)
+                  10805f60    000000e0                   : memset.obj (.text:_memset)
+                  10806040    000000e0                   : lowlev.obj (.text:_close)
+                  10806120    000000e0     main.obj (.text)
+                  10806200    000000e0     rts64plus.lib : fseek.obj (.text:_fseek)
+                  108062e0    000000e0                   : _printfi.obj (.text:__div)
+                  108063c0    000000e0                   : autoinit.obj (.text:__auto_init)
+                  108064a0    000000c0                   : trgdrv.obj (.text:_HOSTwrite)
+                  10806560    000000c0                   : ltoa.obj (.text:_ltoa)
+                  10806620    000000c0                   : divu.obj (.text:__divu)
+                  108066e0    000000c0                   : _printfi.obj (.text:__pconv_f)
+                  108067a0    000000c0                   : _printfi.obj (.text:__ecpy)
+                  10806860    000000c0                   : trgdrv.obj (.text:_HOSTunlink)
+                  10806920    000000c0                   : lowlev.obj (.text:_write)
+                  108069e0    000000c0                   : trgdrv.obj (.text:_HOSTread)
+                  10806aa0    000000c0                   : lowlev.obj (.text:_lseek)
+                  10806b60    000000c0                   : fopen.obj (.text:__cleanup)
+                  10806c20    000000a0                   : memory.obj (.text:_mremove)
+                  10806cc0    000000a0                   : memcpy64.obj (.text:_memcpy)
+                  10806d60    000000a0                   : lowlev.obj (.text:_finddevice)
+                  10806e00    000000a0                   : fflush.obj (.text:__doflush)
+                  10806ea0    000000a0                   : trgmsg.obj (.text:_writemsg)
+                  10806f40    000000a0                   : trgmsg.obj (.text:_readmsg)
+                  10806fe0    000000a0                   : renormd.obj (.text:_renormd)
+                  10807080    000000a0                   : fltlid.obj (.text:__fltlid)
+                  10807120    000000a0                   : memory.obj (.text:_minsert)
+                  108071c0    000000a0                   : fixdli.obj (.text:__fixdli)
+                  10807260    000000a0                   : imath40.obj (.text:__divli)
+                  10807300    000000a0                   : trgdrv.obj (.text:_HOSTclose)
+                  108073a0    00000080                   : lowlev.obj (.text:_unlink)
+                  10807420    00000080                   : printf.obj (.text:_printf)
+                  108074a0    00000080                   : llshift.obj (.text:__llshl)
+                  10807520    00000080                   : fixdi.obj (.text:__fixdi)
+                  108075a0    00000080                   : cmpd.obj (.text:__cmpd)
+                  10807620    00000060                   : memccpy.obj (.text:_memccpy)
+                  10807680    00000060                   : boot.obj (.text:_c_int00)
+                  108076e0    00000060                   : imath64.obj (.text:__subcull)
+                  10807740    00000040                   : subd.obj (.text:__subd)
+                  10807780    00000040                   : args_main.obj (.text:__args_main)
+                  108077c0    00000040                   : imath40.obj (.text:__remli)
+                  10807800    00000040                   : negd.obj (.text:__negd)
+                  10807840    00000040                   : llshift.obj (.text:__llshru)
+                  10807880    00000020                   : exit.obj (.text:_abort)
+                  108078a0    00000020                   : printf.obj (.text:__outs)
+                  108078c0    00000020                   : remove.obj (.text:_remove)
+                  108078e0    00000020                   : negll.obj (.text:__negll)
+                  10807900    00000020                   : printf.obj (.text:__outc)
+                  10807920    00000020                   : _lock.obj (.text:__nop)
+
+.stack     0    10807940    00001000     UNINITIALIZED
+                  10807940    00000008     rts64plus.lib : boot.obj (.stack)
+
+.sysmem    0    10808940    00001000     UNINITIALIZED
+                  10808940    00000008     rts64plus.lib : memory.obj (.sysmem)
+
+.far       0    10809940    0000060c     UNINITIALIZED
+                  10809940    00000200     uart_test.obj (.far)
+                  10809b40    00000194     rts64plus.lib : defs.obj (.far)
+                  10809cd4    00000004                   : fopen.obj (.far)
+                  10809cd8    000000d0                   : trgdrv.obj (.far)
+                  10809da8    000000cc                   : lowlev.obj (.far)
+                  10809e78    00000090                   : exit.obj (.far)
+                  10809f08    00000020     evmdm6437bsl.lib : evmdm6437_gpio.obj (.far)
+                  10809f28    0000000c                      : evmdm6437_flash_id.obj (.far)
+                  10809f34    00000008                      : evmdm6437_uart.obj (.far)
+                  10809f3c    00000008     rts64plus.lib : _lock.obj (.far)
+                  10809f44    00000008                   : memory.obj (.far)
+
+.cinit     0    10809f50    0000022c     
+                  10809f50    0000005c     rts64plus.lib : defs.obj (.cinit)
+                  10809fac    00000004     --HOLE-- [fill = 0]
+                  10809fb0    0000005c                   : lowlev.obj (.cinit)
+                  1080a00c    00000004     --HOLE-- [fill = 0]
+                  1080a010    00000058     evmdm6437bsl.lib : evmdm6437_gpio.obj (.cinit)
+                  1080a068    0000003c                      : evmdm6437_flash_id.obj (.cinit)
+                  1080a0a4    00000004     --HOLE-- [fill = 0]
+                  1080a0a8    0000002c     rts64plus.lib : memory.obj (.cinit)
+                  1080a0d4    00000004     --HOLE-- [fill = 0]
+                  1080a0d8    0000002c                   : exit.obj (.cinit)
+                  1080a104    00000004     --HOLE-- [fill = 0]
+                  1080a108    0000001c     evmdm6437bsl.lib : evmdm6437_uart.obj (.cinit)
+                  1080a124    00000004     --HOLE-- [fill = 0]
+                  1080a128    0000001c     rts64plus.lib : _lock.obj (.cinit)
+                  1080a144    00000004     --HOLE-- [fill = 0]
+                  1080a148    0000000c     evmdm6437bsl.lib : evmdm6437_psc.obj (.cinit)
+                  1080a154    00000004     --HOLE-- [fill = 0]
+                  1080a158    0000000c     rts64plus.lib : fopen.obj (.cinit)
+                  1080a164    00000004     --HOLE-- [fill = 0]
+                  1080a168    0000000c     evmdm6437bsl.lib : evmdm6437_i2c.obj (.cinit)
+                  1080a174    00000008     --HOLE-- [fill = 0]
+
+.const     0    1080a180    0000018c     
+                  1080a180    00000101     rts64plus.lib : ctype.obj (.const)
+                  1080a281    00000002                   : fputs.obj (.const)
+                  1080a283    00000001     --HOLE-- [fill = 0]
+                  1080a284    00000065     main.obj (.const)
+                  1080a2e9    00000023     rts64plus.lib : _printfi.obj (.const)
+
+.cio       0    1080a310    00000120     UNINITIALIZED
+                  1080a310    00000120     rts64plus.lib : trgmsg.obj (.cio)
+
+.switch    0    1080a430    00000030     
+                  1080a430    00000020     evmdm6437bsl.lib : evmdm6437.obj (.switch)
+                  1080a450    00000010     rts64plus.lib : frcdivd.obj (.switch)
+
+.bss       0    1080a460    00000018     UNINITIALIZED
+                  1080a460    00000010     evmdm6437bsl.lib : evmdm6437_flash_id.obj (.bss)
+                  1080a470    00000004                      : evmdm6437_i2c.obj (.bss)
+                  1080a474    00000004                      : evmdm6437_psc.obj (.bss)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+1080a460   $bss
+1080a460   .bss
+10800000   .data
+10800000   .text
+10807880   C$$EXIT
+10806f28   C$$IO$$
+108049e0   _EVMDM6437_DDR_init
+10801a18   _EVMDM6437_FLASH_getTotalPages
+108052c0   _EVMDM6437_FLASH_init
+108042c4   _EVMDM6437_GPIO_getInput
+10804180   _EVMDM6437_GPIO_init
+10804194   _EVMDM6437_GPIO_setDir
+10804234   _EVMDM6437_GPIO_setOutput
+10804140   _EVMDM6437_I2C_GPIO_checkIntr
+108040b4   _EVMDM6437_I2C_GPIO_getInput
+10803fb8   _EVMDM6437_I2C_GPIO_getall
+10803fa0   _EVMDM6437_I2C_GPIO_init
+10804004   _EVMDM6437_I2C_GPIO_setOutput
+10803fe0   _EVMDM6437_I2C_GPIO_setall
+10804108   _EVMDM6437_I2C_GPIO_setupIntr
+10804150   _EVMDM6437_I2C_GPIO_waitForIntr
+10802ee0   _EVMDM6437_I2C_close
+10802ea0   _EVMDM6437_I2C_init
+10803000   _EVMDM6437_I2C_read
+10802ef4   _EVMDM6437_I2C_reset
+10802f08   _EVMDM6437_I2C_write
+108033f0   _EVMDM6437_PSC_changeState
+10803340   _EVMDM6437_PSC_enableAll
+10802b30   _EVMDM6437_UART_close
+10802c00   _EVMDM6437_UART_getChar
+108029c0   _EVMDM6437_UART_open
+10802b90   _EVMDM6437_UART_putChar
+10802bb8   _EVMDM6437_UART_rcvReady
+10802b48   _EVMDM6437_UART_xmtReady
+10800000   _EVMDM6437_enablePll1
+10800210   _EVMDM6437_enablePll2
+10800c80   _EVMDM6437_init
+10800c20   _EVMDM6437_startupGEL
+10807300   _HOSTclose
+10805e80   _HOSTlseek
+10805880   _HOSTopen
+108069e0   _HOSTread
+10804b80   _HOSTrename
+10806860   _HOSTunlink
+108064a0   _HOSTwrite
+10806120   _TEST_execute
+1080a310   __CIOBUF_
+10801900   __FLASH_getId
+10801a04   __FLASH_getMfg
+10801b58   __FLASH_getPageLength
+10801b64   __FLASH_nextPage
+1080530c   __FLASH_waitWhileErasing
+10805378   __FLASH_waitWhileProgramming
+00001000   __STACK_SIZE
+00001000   __SYSMEM_SIZE
+ffffffff   ___binit__
+1080a460   ___bss__
+ffffffff   ___c_args__
+10809f50   ___cinit__
+10800000   ___data__
+10800000   ___edata__
+1080a478   ___end__
+10807940   ___etext__
+ffffffff   ___pinit__
+10800000   ___text__
+10805160   __addd
+10807780   __args_main
+108063c0   __auto_init
+10806b60   __cleanup
+10809f00   __cleanup_ptr
+10800d20   __clrPinMux
+108075a0   __cmpd
+1080a180   __ctypes_
+10804340   __divd
+10807260   __divli
+10806620   __divu
+108046a0   __divul
+10803100   __divull
+10806e00   __doflush
+10809f04   __dtors_ptr
+10807520   __fixdi
+108071c0   __fixdli
+10807080   __fltlid
+108039c0   __frcaddd
+10802c40   __frcdivd
+10805c80   __frcmpyd
+10809cd0   __ft_end
+10809b40   __ftable
+108074a0   __llshl
+10807840   __llshru
+10809f3c   __lock
+10804500   __mpyd
+10807800   __negd
+108078e0   __negll
+10807920   __nop
+10800fa0   __printfi
+108077c0   __remli
+10800d64   __resetEMIF
+10800cd8   __setPinMux
+10800e64   __setupEMIF
+10800ca0   __setupPinMux
+10807940   __stack
+108076e0   __subcull
+10807740   __subd
+10808940   __sys_memory
+10809c30   __tmpnams
+10809f40   __unlock
+10800f4c   __wait
+10800f80   __waitusec
+10805a80   __wrt_ok
+10807880   _abort
+10805d80   _atoi
+10807680   _c_int00
+10806040   _close
+10805780   _exit
+10805660   _fclose
+10805400   _fputc
+10801300   _fputs
+10802740   _free
+10806200   _fseek
+1080a470   _i2c_timeout
+10806aa0   _lseek
+10806560   _ltoa
+108061bc   _main
+10804d20   _malloc
+10807620   _memccpy
+10806cc0   _memcpy
+10805f60   _memset
+10807420   _printf
+10805400   _putc
+10806f40   _readmsg
+108078c0   _remove
+10806fe0   _renormd
+10804840   _setvbuf
+10803580   _uart_test
+108073a0   _unlink
+10806920   _write
+10806ea0   _writemsg
+ffffffff   binit
+10809f50   cinit
+10800000   edata
+1080a478   end
+10807940   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00001000   __SYSMEM_SIZE
+00001000   __STACK_SIZE
+10800000   _EVMDM6437_enablePll1
+10800000   ___text__
+10800000   ___data__
+10800000   ___edata__
+10800000   .data
+10800000   .text
+10800000   edata
+10800210   _EVMDM6437_enablePll2
+10800c20   _EVMDM6437_startupGEL
+10800c80   _EVMDM6437_init
+10800ca0   __setupPinMux
+10800cd8   __setPinMux
+10800d20   __clrPinMux
+10800d64   __resetEMIF
+10800e64   __setupEMIF
+10800f4c   __wait
+10800f80   __waitusec
+10800fa0   __printfi
+10801300   _fputs
+10801900   __FLASH_getId
+10801a04   __FLASH_getMfg
+10801a18   _EVMDM6437_FLASH_getTotalPages
+10801b58   __FLASH_getPageLength
+10801b64   __FLASH_nextPage
+10802740   _free
+108029c0   _EVMDM6437_UART_open
+10802b30   _EVMDM6437_UART_close
+10802b48   _EVMDM6437_UART_xmtReady
+10802b90   _EVMDM6437_UART_putChar
+10802bb8   _EVMDM6437_UART_rcvReady
+10802c00   _EVMDM6437_UART_getChar
+10802c40   __frcdivd
+10802ea0   _EVMDM6437_I2C_init
+10802ee0   _EVMDM6437_I2C_close
+10802ef4   _EVMDM6437_I2C_reset
+10802f08   _EVMDM6437_I2C_write
+10803000   _EVMDM6437_I2C_read
+10803100   __divull
+10803340   _EVMDM6437_PSC_enableAll
+108033f0   _EVMDM6437_PSC_changeState
+10803580   _uart_test
+108039c0   __frcaddd
+10803fa0   _EVMDM6437_I2C_GPIO_init
+10803fb8   _EVMDM6437_I2C_GPIO_getall
+10803fe0   _EVMDM6437_I2C_GPIO_setall
+10804004   _EVMDM6437_I2C_GPIO_setOutput
+108040b4   _EVMDM6437_I2C_GPIO_getInput
+10804108   _EVMDM6437_I2C_GPIO_setupIntr
+10804140   _EVMDM6437_I2C_GPIO_checkIntr
+10804150   _EVMDM6437_I2C_GPIO_waitForIntr
+10804180   _EVMDM6437_GPIO_init
+10804194   _EVMDM6437_GPIO_setDir
+10804234   _EVMDM6437_GPIO_setOutput
+108042c4   _EVMDM6437_GPIO_getInput
+10804340   __divd
+10804500   __mpyd
+108046a0   __divul
+10804840   _setvbuf
+108049e0   _EVMDM6437_DDR_init
+10804b80   _HOSTrename
+10804d20   _malloc
+10805160   __addd
+108052c0   _EVMDM6437_FLASH_init
+1080530c   __FLASH_waitWhileErasing
+10805378   __FLASH_waitWhileProgramming
+10805400   _putc
+10805400   _fputc
+10805660   _fclose
+10805780   _exit
+10805880   _HOSTopen
+10805a80   __wrt_ok
+10805c80   __frcmpyd
+10805d80   _atoi
+10805e80   _HOSTlseek
+10805f60   _memset
+10806040   _close
+10806120   _TEST_execute
+108061bc   _main
+10806200   _fseek
+108063c0   __auto_init
+108064a0   _HOSTwrite
+10806560   _ltoa
+10806620   __divu
+10806860   _HOSTunlink
+10806920   _write
+108069e0   _HOSTread
+10806aa0   _lseek
+10806b60   __cleanup
+10806cc0   _memcpy
+10806e00   __doflush
+10806ea0   _writemsg
+10806f28   C$$IO$$
+10806f40   _readmsg
+10806fe0   _renormd
+10807080   __fltlid
+108071c0   __fixdli
+10807260   __divli
+10807300   _HOSTclose
+108073a0   _unlink
+10807420   _printf
+108074a0   __llshl
+10807520   __fixdi
+108075a0   __cmpd
+10807620   _memccpy
+10807680   _c_int00
+108076e0   __subcull
+10807740   __subd
+10807780   __args_main
+108077c0   __remli
+10807800   __negd
+10807840   __llshru
+10807880   C$$EXIT
+10807880   _abort
+108078c0   _remove
+108078e0   __negll
+10807920   __nop
+10807940   ___etext__
+10807940   etext
+10807940   __stack
+10808940   __sys_memory
+10809b40   __ftable
+10809c30   __tmpnams
+10809cd0   __ft_end
+10809f00   __cleanup_ptr
+10809f04   __dtors_ptr
+10809f3c   __lock
+10809f40   __unlock
+10809f50   ___cinit__
+10809f50   cinit
+1080a180   __ctypes_
+1080a310   __CIOBUF_
+1080a460   .bss
+1080a460   $bss
+1080a460   ___bss__
+1080a470   _i2c_timeout
+1080a478   ___end__
+1080a478   end
+ffffffff   pinit
+ffffffff   ___c_args__
+ffffffff   ___pinit__
+ffffffff   binit
+ffffffff   ___binit__
+
+[144 symbols]
